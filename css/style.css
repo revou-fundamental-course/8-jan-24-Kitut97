@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;800&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #eee;
+}
+
+/* reset css [START] */
+/*--- RESET/NORMALIZE ---*/
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+pre,
+dl,
+dd,
+p,
+blockquote,
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0;
+}
+legend {
+  padding: 0;
+}
+fieldset,
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+body {
+  line-height: 1;
+}
+main,
+figure,
+figcaption,
+img {
+  display: block;
+} /*--- <main> for IE 11 ---*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+fieldset {
+  border: 0;
+}
+input,
+textarea,
+select,
+button {
+  display: block;
+  max-width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+label {
+  display: table;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"] {
+  -webkit-appearance: none;
+} /*--- for Safari (add/remove types as needed) ---*/
+button {
+  line-height: inherit;
+}
+button::-moz-focus-inner {
+  border: 0;
+} /*--- for Firefox ---*/
+html {
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-size: 1.25em;
+} /*--- optional base font size ---*/
+
+* {
+  box-sizing: border-box;
+}
+/* reset css [END] */
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.container .navigation {
+  background-color: #1c658a;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.container .navigation h1 {
+  font-size: 50px;
+}
+
+.container .navigation h1 small {
+  font-size: 70%;
+  opacity: 0.7;
+}
+
+.wrapper {
+  background-color: #fff;
+  padding: 16px 12px;
+  max-width: 700px;
+  margin: 40px auto;
+}
+
+.wrapper .welcome {
+  text-align: center;
+}
+
+.wrapper .welcome h2 {
+  margin-bottom: 12px;
+}
+
+.wrapper .welcome p {
+  margin-bottom: 8px;
+}
+
+.wrapper .welcome .buttons {
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.wrapper .welcome .buttons .button {
+  padding: 12px 16px;
+}
+
+.wrapper .welcome .buttons .button.primary {
+  background-color: #1c658a;
+  color: #fff;
+}
+.wrapper .welcome .buttons .button.secondary {
+  color: #1c658a;
+}
+
+.kotak {
+  margin-top: 80px;
+  border: 1px solid #1c658a;
+}
+
+.kotak-head {
+  background-color: #1c658a;
+  color: #fff;
+  padding: 30px;
+}
+
+.kotak-head h1 {
+  font-size: 38px;
+  text-align: center;
+}
+
+.kotak-body {
+  padding: 18px;
+}
+
+.kotak-body.border-b {
+  border-bottom: 1px solid #eee;
+}
+
+.kotak-body.rumus .formula {
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-align: center;
+  margin: 8px 0;
+}
+
+.kotak-body.action {
+  text-align: center;
+}
+
+.kotak-body.action h3 {
+  margin-bottom: 18px;
+  margin-top: 22px;
+}
+
+.kotak-body.action input {
+  outline: none;
+  border: 1px solid #eee;
+  padding: 12px 16px;
+  display: block;
+  width: 100%;
+}
+
+.kotak-body.action .result ul {
+  text-align: left;
+}
+
+.kotak-body.action .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 12px;
+}
+.kotak-body.action .buttons button {
+  outline: none;
+  border: none;
+
+  border-radius: 4px;
+  color: #fff;
+  padding: 12px 16px;
+}
+
+.kotak-body.action .primary {
+  background-color: #1c658a;
+}
+
+.kotak-body.action .secondary {
+  background-color: rgb(127, 136, 4);
+}
+
+.kotak-image {
+  border: 4px solid red;
+  width: 300px;
+  height: 300px;
+
+  margin: 100px auto 80px auto;
+  position: relative;
+}
+
+.kotak-image--point-a,
+.kotak-image--point-b,
+.kotak-image--point-c,
+.kotak-image--point-d,
+.kotak-image--label {
+  position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.kotak-image--point-a {
+  left: -30px;
+  top: -30px;
+}
+
+.kotak-image--point-b {
+  right: -30px;
+  top: -30px;
+}
+
+.kotak-image--point-c {
+  left: -30px;
+  bottom: -30px;
+}
+
+.kotak-image--point-d {
+  bottom: -30px;
+  right: -30px;
+}
+
+.kotak-image--label {
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -60px;
+  font-size: 30px;
+  width: max-content;
+}

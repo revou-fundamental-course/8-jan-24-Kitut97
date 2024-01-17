@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Katik Persegi</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="navigation">
+        <h1>Katik <small>Kalkulator Matematik</small></h1>
+      </header>
+
+      <div class="wrapper">
+        <div class="welcome">
+          <h2>Welcome to Katik</h2>
+          <p>Hai sobat, selamat datang di Katik :]</p>
+          <p>
+            Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas
+            dan keliling bangun datar
+          </p>
+
+          <div class="buttons">
+            <a href="#p" id="luas" class="button primary">Persegi</a>
+            <a href="#pp" id="luas" class="button secondary">P. Panjang</a>
+          </div>
+        </div>
+
+        <section>
+          <div class="kotak">
+            <div class="kotak-head">
+              <h1>Luas Persegi</h1>
+            </div>
+
+            <div class="kotak-body rumus border-b">
+              <div class="kotak-image luas">
+                <div class="kotak-image--point-a">A</div>
+                <div class="kotak-image--point-b">B</div>
+                <div class="kotak-image--point-c">C</div>
+                <div class="kotak-image--point-d">D</div>
+
+                <div class="kotak-image--label">Bujur sangkar</div>
+              </div>
+
+              <div>
+                <div>Rumus Luas Persegi yaitu :</div>
+                <div class="formula">L = S x S</div>
+                <div>Di mana :</div>
+                <div class="luas">L = Luas</div>
+                <div class="Sisi">S = Sisi</div>
+              </div>
+            </div>
+            <div class="kotak-body action">
+              <h3>Hitung luas persegi</h3>
+              <input
+                type="text"
+                type="number"
+                placeholder="Nilai sisi"
+                id="input-luas"
+              />
+
+              <div id="result-luas" class="kotak-body action result"></div>
+
+              <div class="buttons">
+                <button class="primary" onclick="hitungLuas()">Hitung</button>
+                <button class="secondary" onclick="resetLuas()">Reset</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="kotak">
+            <div class="kotak-head">
+              <h1>Keliling Persegi</h1>
+            </div>
+
+            <div class="kotak-body rumus border-b">
+              <div class="kotak-image keliling">
+                <div class="kotak-image--point-a">A</div>
+                <div class="kotak-image--point-b">B</div>
+                <div class="kotak-image--point-c">C</div>
+                <div class="kotak-image--point-d">D</div>
+
+                <div class="kotak-image--label">Bujur sangkar</div>
+              </div>
+
+              <div>
+                <div>Rumus Keliling Persegi yaitu :</div>
+                <div class="formula">K = 4 x S</div>
+                <div>Di mana :</div>
+                <div class="luas">K = Keliling</div>
+                <div class="Sisi">S = Sisi</div>
+              </div>
+            </div>
+            <div class="kotak-body action">
+              <h3>Hitung keliling persegi</h3>
+              <input
+                type="text"
+                type="number"
+                placeholder="Nilai sisi"
+                id="input-keliling"
+              />
+
+              <div id="result-keliling" class="kotak-body action result"></div>
+
+              <div class="buttons">
+                <button class="primary" onclick="hitungKeliling()">
+                  Hitung
+                </button>
+                <button class="secondary" onclick="resetKeliling()">
+                  Reset
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
